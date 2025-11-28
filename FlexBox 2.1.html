@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+
+    <style>
+
+        body {
+
+            margin: 0;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: #f5f5f5;
+
+        }
+
+
+        /* HEADER */
+
+        .header {
+
+            background: #222222;
+
+            padding: 10px 20px;
+
+            color: white;
+
+        }
+
+
+        /* CARD CONTAINER */
+
+        .cards-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 25px;
+
+            padding: 30px;
+
+            width: 100%;
+
+
+        }
+
+        /* CARD */
+
+        .card {
+
+            background: #222222;
+
+            width: 100%;
+
+            max-width: 360px;
+
+            border-radius: 8px;
+
+            text-align: center;
+
+            position: relative;
+
+            padding-bottom: 20px;
+
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            
+
+        }
+
+        .card-img {
+
+            width: 100%;
+
+            height: 180px;
+
+            overflow: hidden;
+
+            position: relative;
+
+            border-top-left-radius: 8px;
+
+            border-top-right-radius: 8px;
+
+        }
+
+        .card-img img {
+
+            height: 100%;
+
+            width: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+        }
+
+        .avatar {
+
+            position: absolute;
+
+            top: 110px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 90px;
+
+            height: 90px;
+
+        }
+
+        .avatar img{
+
+            width: 100%;
+
+            height: 100%;
+
+            border-radius: 50%;
+
+            border: 4px solid rgb(122, 122, 122);
+
+            object-fit: cover;
+
+        }
+
+        .icon {
+
+            position: absolute;
+
+            top: 10px;
+
+            left: 10px;
+
+            font-size: 22px;
+
+            color: red;
+
+        }
+
+         h3 {
+
+            margin-top: 60px;
+
+            color: white;
+        }
+
+        p {
+
+                font-size: 14px;
+
+                padding: 0 15px;
+
+                color: white;
+
+        }
+
+        button {
+
+            background: #0e0e0e;
+
+            color: white;
+
+            border: none;
+
+            padding: 8px 25px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            margin-top: 10px;
+
+        }
+
+        button:hover {
+
+            background: #707070;
+
+        }
+
+        footer {
+
+            text-align: center;
+
+            padding: 10px;
+
+            background: #222222;
+
+            color: white;
+
+            font-size: 12px;
+
+        }
+
+                @media (max-width: 480px) {
+    
+            .card {
+    
+    
+                max-width: 100%;
+    
+            }
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1> GEARS OF WAR: DELTA SQUAD </h1>
+
+    </header>
+
+    <section class="cards-container">
+
+        <!-- TARJETA 1 -->
+
+        <div class="card">
+
+            <div class="card-img">
+
+                <span class="icon"> 🎖 </span>
+
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7a71af2e-bee0-4a9f-9525-2a617dcd2c42/d56ocjo-2270e90e-1b64-4427-80df-47e0c7ee1a2b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83YTcxYWYyZS1iZWUwLTRhOWYtOTUyNS0yYTYxN2RjZDJjNDIvZDU2b2Nqby0yMjcwZTkwZS0xYjY0LTQ0MjctODBkZi00N2UwYzdlZTFhMmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.B5FRoxikaPKkm9nYqOip2PAWNLmNfD9wqiX1b6oJA6E" alt="imgBackground">
+
+            </div>
+
+            <div class="avatar">
+
+                <img src="https://tse1.mm.bing.net/th/id/OIP.7THYHQjpLyLlzNq-3hccLgHaIz?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Marcus Fenix">
+
+            </div>
+
+            <h3>MARCUS FENIX</h3>
+
+            <p>
+
+            Marcado por pérdidas personales, una vida de guerra constante y decisiones difíciles, Marcus es un héroe imperfecto pero profundamente humano. Su liderazgo, lealtad y valentía lo convierten en uno de los personajes más icónicos de los videojuegos de acción modernos.
+
+            </p>
+
+            <button>Ver mas</button>
+
+        </div>
+
+                <!-- TARJETA 2 -->
+
+        <div class="card">
+
+            <div class="card-img">
+
+                <span class="icon"> 🎖 </span>
+
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7a71af2e-bee0-4a9f-9525-2a617dcd2c42/d56ocjo-2270e90e-1b64-4427-80df-47e0c7ee1a2b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83YTcxYWYyZS1iZWUwLTRhOWYtOTUyNS0yYTYxN2RjZDJjNDIvZDU2b2Nqby0yMjcwZTkwZS0xYjY0LTQ0MjctODBkZi00N2UwYzdlZTFhMmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.B5FRoxikaPKkm9nYqOip2PAWNLmNfD9wqiX1b6oJA6E" alt="imgBackground">
+
+            </div>
+
+            <div class="avatar">
+
+                <img src="data:image/jpeg;base64,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" alt="Augustus Cole">
+
+            </div>
+
+            <h3>AUGUSTUS COLE</h3>
+
+            <p>
+
+                Augustus Cole es un exjugador profesional de thrashball, famoso por su energía explosiva, su enorme fuerza física y su actitud siempre positiva en medio del caos. Su carisma, humor y ferocidad en el combate lo convierten en uno de los miembros más queridos del equipo. En el campo de batalla es imparable, y su grito “Woo! Cole Train, baby!” es ya una marca registrada del personaje.
+           
+            </p>
+
+            <button>Ver mas</button>
+
+        </div>
+
+                        <!-- TARJETA 3 -->
+
+        <div class="card">
+
+            <div class="card-img">
+
+                <span class="icon"> 🎖 </span>
+
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7a71af2e-bee0-4a9f-9525-2a617dcd2c42/d56ocjo-2270e90e-1b64-4427-80df-47e0c7ee1a2b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83YTcxYWYyZS1iZWUwLTRhOWYtOTUyNS0yYTYxN2RjZDJjNDIvZDU2b2Nqby0yMjcwZTkwZS0xYjY0LTQ0MjctODBkZi00N2UwYzdlZTFhMmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.B5FRoxikaPKkm9nYqOip2PAWNLmNfD9wqiX1b6oJA6E" alt="imgBackground">
+
+            </div>
+
+            <div class="avatar">
+
+                <img src="https://i.pinimg.com/564x/21/22/6b/21226bce98106e1c606ef0ae56b35787.jpg" alt="Damon Baird">
+
+            </div>
+
+            <h3>DAMON BAIRD</h3>
+
+            <p>
+
+            Damon Baird es el ingeniero y técnico experto del escuadrón. Sarcástico, inteligente y con una actitud cínica hacia casi todo, Baird aporta conocimiento tecnológico que es vital para enfrentar amenazas desconocidas y operar maquinaria compleja. Aunque suele parecer distante, demuestra un fuerte sentido de responsabilidad y compromiso con su equipo.
+            </p>
+
+            <button>Ver mas</button>
+
+        </div>
+
+                        <!-- TARJETA 4 -->
+
+        <div class="card">
+
+            <div class="card-img">
+
+                <span class="icon"> 🎖 </span>
+
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7a71af2e-bee0-4a9f-9525-2a617dcd2c42/d56ocjo-2270e90e-1b64-4427-80df-47e0c7ee1a2b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83YTcxYWYyZS1iZWUwLTRhOWYtOTUyNS0yYTYxN2RjZDJjNDIvZDU2b2Nqby0yMjcwZTkwZS0xYjY0LTQ0MjctODBkZi00N2UwYzdlZTFhMmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.B5FRoxikaPKkm9nYqOip2PAWNLmNfD9wqiX1b6oJA6E" alt="imgBackground">
+
+            </div>
+
+            <div class="avatar">
+
+                <img src="https://i.pinimg.com/474x/a8/5d/c4/a85dc466d81e7f7e6c0ad85e6fda2378.jpg" alt="Dominic Santiago">
+
+            </div>
+
+            <h3>DOMINIC SANTIAGO</h3>
+
+            <p>
+
+                Dom Santiago es el mejor amigo y compañero inseparable de Marcus Fenix. Leal, empático y profundamente humano, Dom carga con un pasado trágico marcado por la desaparición de su esposa, lo que impulsa muchas de sus decisiones. Es el corazón emocional del equipo, alguien en quien todos confían tanto por su habilidad en combate como por su gran integridad.
+            
+            </p>
+
+            <button>Ver mas</button>
+
+        </div>
+
+
+        
+
+
+        
+
+
+    </section>
+
+        <footer class="footer">
+
+            Todos los derechos reservados COG &copy; 2026
+
+        </footer>
+
+    
+</body>
+
+</html>
